@@ -1,0 +1,3 @@
+# Kotlin List Modification During Iteration
+
+This repository demonstrates a common issue when modifying lists while iterating in Kotlin.  The example code shows three different approaches to removing even numbers from a list.  `removeIf` and `removeAll` handle this correctly. However, manually removing elements using `removeAt` within a loop requires careful index management to avoid potential `IndexOutOfBoundsException` or skipping elements.  The solution provides a safe approach using a descending index iteration to prevent errors.
